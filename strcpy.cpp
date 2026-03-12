@@ -13,11 +13,13 @@ int main()
         if(a[i]>='a' && a[i]<='z')
             {
                 strcpy(a+i,a+i+1);
-                k=1;
+                k++;
             }
         else i++;
     }
-    if(k) cout<<a;
-    else cout<<"CUVANT VID";
+    if(0 == strlen(a)) cout<<"CUVANT VID";
+    else cout<<a;
+
     return 0;
 }
+
